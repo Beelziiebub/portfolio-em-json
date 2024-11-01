@@ -1,0 +1,91 @@
+{
+   
+   "Classes": [
+       
+   {
+       "nome": "Usuario",
+       "atributos": [
+           {"id": "int"},
+           {"Nome": "string"},
+           {"senha": "string"},
+           {"nomeUsuario": "string"},
+       ],
+
+   "metodos": [
+
+    {
+        "nome": "login",
+        "parametro":[
+            {"email": "string"},
+            {"senha": "string"}
+
+        ],
+
+        "retorno": "bolean"
+     }
+
+   ]
+
+},
+
+
+{
+    "nome": "Denuncia",
+    "atributos": [
+        {"id": "int"},
+        {"idusuario": "int"},
+        {"tipoProblema": "string"},
+        {"descricao": "string"},
+        {"localizacao": "string"},
+        {"datacriacao": "data"},
+        {"string": "string"}
+
+    ],
+
+"metodos": [
+    {
+        "nome": "fecharDenuncia",
+        "parametros": [],
+        "retorno": "void"
+        }
+
+     ]
+
+},
+
+{
+    "nome": "Comentario",
+    "atributo": [
+    {"id": "int"},
+    {"idDenuncia": "int"},
+    {"idUsuario": "int"},
+    {"dataComentário": "Date"}
+    ]
+},
+
+{
+    "nome": "Dashboard",
+    "metodos": [
+        {
+            "nome": "gerarRelatorioMensal",
+            "parametros": [],
+            "retorno": "Map<String, Integer>"
+        }
+    ]
+},
+
+{
+    "nome": "LoginWindow",
+    "metodos": [
+        {
+            "nome": "criarJanela",
+            "parametros": [],
+            "retorno": "void"
+
+
+             }
+          ]
+       }
+    ]   
+
+ }  
